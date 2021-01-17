@@ -36,10 +36,10 @@ export class PhotoFormComponent implements OnInit {
     const description = this.photoForm.get('description').value;
     const allowComments = this.photoForm.get('allowComments').value;
     this.photoService
-      .upload(description, allowComments, this.file)
-      .subscribe(() => {
-        this.alertService.success('Upload complete', true);
-        this.router.navigate(['/user', this.userService.getUserName()]);
+        .upload(description, allowComments, this.file)
+        .subscribe(() => {
+            this.alertService.success('Upload complete');
+            this.router.navigate(['']);
       });
         
   }
