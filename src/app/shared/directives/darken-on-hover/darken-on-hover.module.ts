@@ -1,4 +1,3 @@
-  
 import { NgModule } from '@angular/core';
 import { DarkenOnHoverDirective } from './darken-on-hover.directive';
 
